@@ -1,6 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
   const section = document.querySelectorAll(".section"),
-    // slider__section = document.querySelector(".slider__section"),
     section__wrapper = document.querySelector(".section__wrapper"),
     section__inner = document.querySelector(".section__inner"),
     lengthSection = section.length,
@@ -29,27 +28,4 @@ window.addEventListener("DOMContentLoaded", () => {
         section__inner.style.transform = `translateY(-${offsetSlide}px)`;
     });
   });
-
-  // btn__next.addEventListener("click", () => {
-  //   if (
-  //     offsetSlide ===
-  //     +heigthWrapper.slice(0, heigthWrapper.length - 2) * (section.length - 1)
-  //   ) {
-  //     offsetSlide = 0;
-  //   } else {
-  //     offsetSlide += +heigthWrapper.slice(0, heigthWrapper.length - 2);
-  //   }
-  //   section__inner.style.transform = `translateY(-${offsetSlide}px)`;
-  // });
-
-  // btn__prev.addEventListener("click", () => {
-  //   if (offsetSlide === 0) {
-  //     offsetSlide =
-  //       +heigthWrapper.slice(0, heigthWrapper.length - 2) *
-  //       (section.length - 1);
-  //   } else {
-  //     offsetSlide -= +heigthWrapper.slice(0, heigthWrapper.length - 2);
-  //   }
-  //   section__inner.style.transform = `translateY(-${offsetSlide}px)`;
-  // });
 });
